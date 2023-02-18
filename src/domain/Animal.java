@@ -7,8 +7,8 @@ public class Animal {
     protected int weight;
 
     public Animal() {
-        name="generic animal";
-        weight=25;
+        name = "generic animal";
+        weight = 25;
     }
 
     public void eat() {
@@ -19,10 +19,13 @@ public class Animal {
         System.out.println("Animal speaking...");
     }
 
-    @Override
-    public String toString() {
-        return "My animal:" + "\nName:\t" + name + "\nWeight:\t" + weight+" kg";
+    public void sleep() {
+        System.out.println("Animal sleeping...");
     }
 
- 
+    @Override
+    public String toString() {
+        return "My animal:" + "\nName:\t" + name + "\nWeight:\t" + weight + " kg";
+    }
+
 }
